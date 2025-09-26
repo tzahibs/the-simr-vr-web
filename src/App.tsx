@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import FeaturedGames from './components/FeaturedGames';
+import { LatestReviews } from './components/LatestReviews';
+import Footer from './components/Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.body}>
+      <div style={styles.app}>
+        <Navbar />
+        <Hero />
+        <main style={styles.main}>
+          <FeaturedGames />
+          <LatestReviews />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
+
+const styles: { [key: string]: React.CSSProperties } = {
+  body: {
+    fontFamily: 'Arial, sans-serif',
+    margin: 0,
+    backgroundColor: '#f4f4f4',
+    color: '#333'
+  },
+  app: {
+    textAlign: 'center'
+  },
+  main: {
+    padding: '2rem'
+  }
+};
 
 export default App;
