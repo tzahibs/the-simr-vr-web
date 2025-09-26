@@ -21,12 +21,12 @@ const styles: { [key: string]: CSSProperties } = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#333',
+        backgroundColor: '#181818', // dark background
         padding: '1rem',
-        color: 'white'
+        color: '#fff'
     },
     brandLink: {
-        color: 'white',
+        color: '#a259ff', // purple accent
         textDecoration: 'none',
         fontSize: '1.5rem'
     },
@@ -40,7 +40,7 @@ const styles: { [key: string]: CSSProperties } = {
         marginLeft: '1.5rem'
     },
     navLink: {
-        color: 'white',
+        color: '#fff',
         textDecoration: 'none'
     }
 };

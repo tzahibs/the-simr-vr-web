@@ -23,15 +23,15 @@ function App() {
   );
 }
 
-const styles: { [key: string]: React.CSSProperties } = {
+const styles = {
   body: {
     fontFamily: 'Arial, sans-serif',
     margin: 0,
-    backgroundColor: '#f4f4f4',
-    color: '#333'
+    backgroundColor: '#181818', // dark background
+    color: '#fff' // white text
   },
   app: {
-    textAlign: 'center'
+    textAlign: 'center' as const
   },
   main: {
     padding: '2rem'

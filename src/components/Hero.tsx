@@ -13,22 +13,25 @@ export default function Hero() {
 
 const styles: { [key: string]: CSSProperties } = {
     heroSection: {
-        background: "url('https://via.placeholder.com/1500x600') no-repeat center center/cover",
+        background: "#181818", // dark background
         height: '60vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        color: 'white',
+        color: '#fff',
         textAlign: 'center'
     },
     title: {
         fontSize: '3rem',
-        marginBottom: '1rem'
+        marginBottom: '1rem',
+        color: '#a259ff' // purple accent
     },
     searchInput: {
         padding: '0.5rem',
         width: '300px',
         borderRadius: '5px',
-        border: 'none'
+        border: 'none',
+        backgroundColor: '#222',
+        color: '#fff'
     }
 };

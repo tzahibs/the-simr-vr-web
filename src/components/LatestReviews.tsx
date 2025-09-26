@@ -3,7 +3,7 @@ import React, { CSSProperties } from 'react';
 export const LatestReviews = () => {
     return (
         <section style={styles.section}>
-            <h2>Latest Reviews</h2>
+            <h2 style={styles.title}>Latest Reviews</h2>
             {/* Placeholder for review list */}
         </section>
     );
@@ -11,7 +11,14 @@ export const LatestReviews = () => {
 
 const styles: { [key: string]: CSSProperties } = {
     section: {
-        marginBottom: '2rem'
+        marginBottom: '2rem',
+        backgroundColor: '#222',
+        color: '#fff',
+        borderRadius: '8px',
+        padding: '1rem'
+    },
+    title: {
+        color: '#a259ff'
     }
 };
 
