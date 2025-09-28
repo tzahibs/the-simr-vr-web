@@ -21,4 +21,3 @@ const styles: { [key: string]: CSSProperties } = {
         color: '#a259ff'
     }
 };
-
