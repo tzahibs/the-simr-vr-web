@@ -47,6 +47,9 @@ To deploy your app to GitHub Pages, run:
 
 This command builds your app and publishes the production build to the `gh-pages` branch of your repository, making it available at the URL specified in the `homepage` field of `package.json`.
 
+**Live site:**  
+[https://tzahibs.github.io/the-simr-vr-web](https://tzahibs.github.io/the-simr-vr-web)
+
 > **Note:**  
 > Ensure the `build` folder exists before running this command. You can create it by running `npm run build`.
 
